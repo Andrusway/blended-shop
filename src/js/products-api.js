@@ -18,3 +18,8 @@ export async function fetchProducts(currentPage) {
   const { data } = await axios(ENDPOINTS.PRODUCTS, parameters);
   return data;
 }
+
+export async function fetchProduct(productId) {
+  const { data } = await axios(`${ENDPOINTS.PRODUCTS}/${productId}`);
+  return data;
+}
