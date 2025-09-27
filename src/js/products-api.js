@@ -22,7 +22,8 @@ export async function fetchProducts(currentPage) {
 
 
 export async function fetchSearchProducts(product) {
-  const { data } = await axios(`ENDPOINTS.SEARCH_PRODUCT${product}`);
+  const { data } = await axios(`${ENDPOINTS.SEARCH_PRODUCT}q=${product}`);
+  return data;
 }
 
 
