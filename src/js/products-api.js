@@ -7,3 +7,8 @@ export async function fetchCategories() {
   const { data } = await axios(`${ENDPOINTS.CATEGORIES}`);
   return data;
 }
+
+export async function fetchSearchProducts(product) {
+  const { data } = await axios(`ENDPOINTS.SEARCH_PRODUCT${product}`);
+  return data;
+}
