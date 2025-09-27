@@ -6,7 +6,9 @@
 // https://dummyjson.com/products/category/smartphones - отримати продукти по категорії
 
 export const BASE_URL = 'https://dummyjson.com';
+export const PER_PAGE = 12;
 
 export const ENDPOINTS = {
   CATEGORIES: '/products/category-list',
+  PRODUCTS: '/products',
 };
