@@ -7,8 +7,10 @@
 
 export const BASE_URL = 'https://dummyjson.com';
 export const PER_PAGE = 12;
+export const IS_OPEN = 'modal--is-open';
 
 export const ENDPOINTS = {
   CATEGORIES: '/products/category-list',
   PRODUCTS: '/products',
+  PRODUCT: '/products',
 };
