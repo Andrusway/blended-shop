@@ -1,5 +1,5 @@
-import { fetchCategories, fetchProducts } from './products-api';
-import { renderCategories, renderProducts } from './render-function';
+import { fetchCategories } from './products-api';
+import { renderCategories } from './render-function';
 
 export async function getCategories() {
   try {
@@ -13,6 +13,20 @@ export async function getCategories() {
     console.log(error);
   }
 }
+
+export async function getProducts(currentPage){
+  try {
+    const products = await fetchProducts(currentPage);
+    renderProducts(products);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export function categoriesOnClick () {
+  
+}
+
 
 export async function getProducts(currentPage){
   try {

@@ -11,6 +11,8 @@ export function renderCategories(data) {
   refs.categoryList.innerHTML = markup;
 }
 
+
+
 export function renderProducts(data) {
   const markup = data.products
     .map(
@@ -30,3 +32,8 @@ export function renderProducts(data) {
 export function clearProducts() {
   refs.productList.innerHTML = '';
 }
+
+export function clearProducts() {
+  refs.productList.innerHTML = '';
+}
+
