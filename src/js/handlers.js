@@ -19,7 +19,7 @@ export async function getCategories() {
   }
 }
 
-export async function getProducts(currentPage){
+export async function getProducts(currentPage) {
   try {
     const products = await fetchProducts(currentPage);
     renderProducts(products);
@@ -28,20 +28,11 @@ export async function getProducts(currentPage){
   }
 }
 
-export function categoriesOnClick () {
-  
+export function categoriesOnClick() {
+  // TODO: реалізуй логіку кліку по категорії
 }
 
-
-export async function getProducts(currentPage){
-  try {
-    const products = await fetchProducts(currentPage);
-    renderProducts(products);
-  } catch (error) {
-    console.log(error);
-  }
-}
-export async function getProduct(productId){
+export async function getProduct(productId) {
   try {
     const product = await fetchProduct(productId);
     renderProduct(product);
