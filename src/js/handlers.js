@@ -1,4 +1,3 @@
-import { fetchCategories } from './products-api';
 import { fetchCategories, fetchProduct, fetchProducts } from './products-api';
 import {
   renderCategories,
