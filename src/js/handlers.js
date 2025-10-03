@@ -1,7 +1,6 @@
 import { fetchCategories, fetchProduct, fetchProducts } from './products-api';
 import {
   renderCategories,
-  renderProduct,
   renderProducts,
 } from './render-function';
 import { openModal } from './modal.js';
@@ -29,7 +28,7 @@ export async function getProducts(currentPage) {
 }
 
 export function categoriesOnClick() {
-  // TODO: реалізуй логіку кліку по категорії
+  
 }
 
 export async function getProduct(productId) {
