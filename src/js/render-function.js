@@ -32,8 +32,3 @@ export function renderProducts(data) {
 export function clearProducts() {
   refs.productList.innerHTML = '';
 }
-
-export function clearProducts() {
-  refs.productList.innerHTML = '';
-}
-
